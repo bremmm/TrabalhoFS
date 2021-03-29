@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI Search Algorithms</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="theme.css" />
+  </head>
+  <body>
+    <h1>Trabalho de fundamentos de sistemas inteligentes</h1>
+    <div class="attribution">
+      <p>Código adaptado, o original foi criado por: <a href="https://github.com/matthamil">Matt Hamil</a></p>
+    </div>
+    <img src="./mapa do br.png" alt="mapa do Brasil" />
+    <h2>Mapa do Brasil</h2>
+    <div style="text-align: center">
+      <input type="text" id="start" placeholder="Inicio" />
+      <input type="text" id="goal" placeholder="Fim" />
+    </div>
+    <div style="text-align: center">
+      <button onclick="bfs()" class="btn btn-primary" id="bfs-button">Breadth-first Search</button>
+      <button onclick="dfs()" class="btn btn-success" id="dfs-button">Depth-first Search</button>
+      <button onclick="ucs()" class="btn btn-warning" id="ucs-button">Uniform-cost Search</button>
+      <button onclick="astar()" class="btn btn-danger" id="astar-button">A* Search</button>
+    </div>
+
+    <h2 id="path">Caminho:</h2>
+    <div id="search-result"></div>
+  </body>
+  <footer>
+    <div style="text-align: center">
+      <h3>Aperte F12 Para visualizar as cidades disponíveis</h3>
+    </div>
+  </footer>
+  <script src="romania-compiled.js"></script>
+</html>
